@@ -27,13 +27,13 @@ public class OwnerService {
 
 
     public ResponseEntity<?> registerOwner(OwnerRequestDTO dto) {
-        System.out.println("Received request: " + dto);
 
         // check if already exists
         Optional<Owner> existing = ownerRepository.findByEmail(dto.getEmail());
         if (existing.isPresent()) {
             return ResponseEntity.badRequest().body("Owner already exists"); // already registered
         }
+        System.out.println("Received request: " + dto);
 
         // find the shop by ID
         Optional<Shop> shopOpt = shopRepository.findById(dto.getShopId());
