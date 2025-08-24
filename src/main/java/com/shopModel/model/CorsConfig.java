@@ -1,3 +1,5 @@
+package com.shopModel.model;
+
 
 
 import org.springframework.context.annotation.Bean;
