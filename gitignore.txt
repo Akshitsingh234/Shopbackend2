@@ -1,0 +1,38 @@
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+### Maven ###
+target/
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.ipr
+out/
+
+### Logs ###
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Environment files ###
+.env
+.env.*
+!.env.example
+
+### Others ###
+/bin/
+/build/
+/tmp/
