@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/admin")
-@CrossOrigin(origins = "https://ornavalult.netlify.app")
+@CrossOrigin(origins = "http://localhost:3000")
 public class AdminController {
 
     @Autowired
