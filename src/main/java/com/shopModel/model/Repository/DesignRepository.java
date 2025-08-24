@@ -13,5 +13,6 @@ public interface DesignRepository extends JpaRepository<Designs, Long> {
     Optional<Designs> findByIdAndShopId(Long id, Long shopId);
     @Transactional
     void deleteByShopId(Long shopId);
-
+    @Transactional
+    void deleteAll();
 }

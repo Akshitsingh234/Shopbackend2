@@ -44,6 +44,7 @@ public class ShopService {
 
     // Delete all shops
     public ResponseEntity<Void> deleteAllShops() {
+        designRepository.deleteAll();
         shopRepository.deleteAll();
         return ResponseEntity.noContent().build();
     }
